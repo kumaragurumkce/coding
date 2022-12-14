@@ -1,0 +1,23 @@
+public class Main
+{
+	public static void main(String[] args) {
+      //Strong Number
+     int sum=0;  
+      int num=145,temp=num,r;
+      while(num>0){
+          r=num%10;
+          int fac=1;
+      for(int i=1;i<=r;i++){
+          fac=fac*i;}
+      num=num/10;
+         sum=fac+sum;
+      }
+     
+     if (temp==sum){
+
+    System.out.printf("its strong");
+}
+else{ 
+    System.out.printf("Not strong");
+}
+}}
